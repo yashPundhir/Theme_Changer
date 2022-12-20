@@ -15,25 +15,28 @@
 		/>
 		<!-- Light Mode Icon -->
 		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
 		/>
+
 		<!-- Dark Mode Icon -->
 		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
 		/>
+
 		<title>Hosting Landing Page</title>
 	</head>
 	<body>
 		<div class="container">
+			<!-- Theme Toggle Section -->
 			<section aria-label="Light Mode/Dark Mode">
 				<div class="theme">
-					<button title="Light Mode" class="lightmode">
-						<span class="material-symbols-outlined"> light_mode </span>
+					<button title="Light Mode" class="lightmode" onclick="toggleLight()">
+						<span class="material-icons lightmodebtn"> light_mode </span>
 					</button>
-					<button title="Dark Mode" class="darkmode">
-						<span class="material-symbols-rounded"> dark_mode </span>
+					<button title="Dark Mode" class="darkmode" onclick="toggleDark()">
+						<span class="material-icons darkmodebtn"> dark_mode </span>
 					</button>
 				</div>
 			</section>
@@ -43,11 +46,16 @@
 						<img src="./Icons/menu-hamburger-svgrepo-com.svg" alt="menu" />
 					</div>
 					<div class="nav-start">
-						<img src="./Icons/Logo.png" alt="Logo" />
+						<img class="blackLogo" src="./Icons/Logo.png" alt="Logo" />
+						<img
+							class="whiteLogo"
+							src="./Icons/white-logo.png"
+							alt="whiteLogo"
+						/>
 					</div>
 					<div class="nav-mid">
 						<ul class="list">
-							<li class="list-item">Home</li>
+							<li class="list-item li-1">Home</li>
 							<li class="list-item">Domain</li>
 							<li class="list-item">Hosting</li>
 							<li class="list-item">Features</li>
@@ -422,5 +430,6 @@
 				</div>
 			</section>
 		</div>
+		<script src="./script.js"></script>
 	</body>
 </html>

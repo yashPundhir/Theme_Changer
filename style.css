@@ -18,32 +18,32 @@
 	outline: none;
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
 .lightmode span {
 	border-radius: 50%;
 	transition-delay: 0s;
 	transition-duration: 1.5s;
-	transition-property: transform, background-color, transform;
+	transition-property: transform, transform;
 	transition-timing-function: ease-in-out;
 }
 .lightmode span:hover {
-	background-color: #e5e5e5;
 	transform: scale(1.4) rotate(180deg);
 }
 .darkmode {
 	outline: none;
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
 .darkmode span {
 	border-radius: 50%;
 	transition-delay: 0s;
 	transition-duration: 1.5s;
-	transition-property: transform, background-color, transform;
+	transition-property: transform, transform;
 	transition-timing-function: ease-in-out;
 }
 .darkmode span:hover {
-	background-color: #e5e5e5;
 	transform: scale(1.4) rotate(360deg);
 }
 .navbar-container {
@@ -63,7 +63,9 @@
 	margin-left: 80px;
 	margin-top: 10px;
 }
-
+.whiteLogo {
+	display: none;
+}
 .nav-start img {
 	width: 90px;
 }
