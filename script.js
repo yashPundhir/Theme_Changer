@@ -16,8 +16,8 @@ function toggleLight() {
 function toggleDark() {
 	let body = document.querySelector("body");
 	let container = body.querySelector(".container");
-	body.style.backgroundColor = "#151515";
-	container.style.backgroundColor = "#151515";
+	body.style.backgroundColor = "#101010";
+	container.style.backgroundColor = "#101010";
 	container.style.color = "#fff";
 	let lightBtn = document.querySelector(".theme .lightmode .lightmodebtn");
 	let darkBtn = document.querySelector(".theme .darkmode .darkmodebtn");
@@ -36,6 +36,12 @@ function toggleDark() {
 	navbarBtn.style.border = "1.5px solid #fff";
 	navbarBtn.style.backgroundColor = "transparent";
 	navbarBtn.style.color = "#fff";
+	let comp1Content = document.querySelector(".component-1-content");
+	comp1Content.style.color = "#fff";
+	comp1Content.style.fontWeight = "300";
+	let comp1Btn = document.querySelector(".component-1-button");
+	comp1Btn.style.background =
+		"linear-gradient(to bottom right, #252525, #404040)";
 
 	lightBtn.style.color = "#fff";
 	darkBtn.style.color = "#fff";
