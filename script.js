@@ -42,6 +42,14 @@ function toggleDark() {
 	let comp1Btn = document.querySelector(".component-1-button");
 	comp1Btn.style.background =
 		"linear-gradient(to bottom right, #252525, #404040)";
+	let comp2 = document.querySelector(".component-2");
+	comp2.style.gap = "60px";
+	let comp2Content = document.querySelector(".component-2-content");
+	comp2Content.style.color = "#fff";
+	comp2Content.style.fontWeight = "300";
+	let comp2Btn = document.querySelector(".component-2-button");
+	comp2Btn.style.background =
+		"linear-gradient(to bottom right, #252525, #404040)";
 
 	lightBtn.style.color = "#fff";
 	darkBtn.style.color = "#fff";
