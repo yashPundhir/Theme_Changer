@@ -7,8 +7,47 @@
 .container {
 	background-color: #fff;
 }
+.theme {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	gap: 20px;
+}
+.lightmode {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+.lightmode span {
+	border-radius: 50%;
+	transition-delay: 0s;
+	transition-duration: 1.5s;
+	transition-property: transform, background-color, transform;
+	transition-timing-function: ease-in-out;
+}
+.lightmode span:hover {
+	background-color: #e5e5e5;
+	transform: scale(1.4) rotate(180deg);
+}
+.darkmode {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+.darkmode span {
+	border-radius: 50%;
+	transition-delay: 0s;
+	transition-duration: 1.5s;
+	transition-property: transform, background-color, transform;
+	transition-timing-function: ease-in-out;
+}
+.darkmode span:hover {
+	background-color: #e5e5e5;
+	transform: scale(1.4) rotate(360deg);
+}
 .navbar-container {
-	height: 120px;
+	height: 30px;
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
@@ -22,14 +61,14 @@
 }
 .nav-start {
 	margin-left: 80px;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 .nav-start img {
 	width: 90px;
 }
 .nav-mid {
-	margin-top: 55px;
+	margin-top: 15px;
 	margin-left: 90px;
 }
 
@@ -52,7 +91,7 @@
 
 .nav-end {
 	margin-left: 0px;
-	margin-top: 42px;
+	margin-top: 2px;
 	margin-right: 80px;
 }
 

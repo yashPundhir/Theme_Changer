@@ -13,10 +13,30 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- Light Mode Icon -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+		/>
+		<!-- Dark Mode Icon -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
 		<title>Hosting Landing Page</title>
 	</head>
 	<body>
 		<div class="container">
+			<section aria-label="Light Mode/Dark Mode">
+				<div class="theme">
+					<button title="Light Mode" class="lightmode">
+						<span class="material-symbols-outlined"> light_mode </span>
+					</button>
+					<button title="Dark Mode" class="darkmode">
+						<span class="material-symbols-rounded"> dark_mode </span>
+					</button>
+				</div>
+			</section>
 			<section aria-label="navbar">
 				<nav class="navbar-container">
 					<div class="hamburger">
