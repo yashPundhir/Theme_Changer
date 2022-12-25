@@ -69,6 +69,12 @@ function toggleDark() {
 	let comp4Content = document.querySelector(".component-4-content");
 	comp4Content.style.color = "#fff";
 	comp4Content.style.fontWeight = "300";
+	//to make changes in component 5
+	let comp5Content = document.querySelectorAll(".component-5-content");
+	for (let i = 0; i < 6; i++) {
+		comp5Content[i].style.color = "#fff";
+		comp5Content[i].style.fontWeight = "300";
+	}
 	//to change the appearance of Dark mode & Light mode buttons in dark mode
 	lightBtn.style.color = "#fff";
 	darkBtn.style.color = "#fff";
