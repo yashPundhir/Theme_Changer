@@ -65,6 +65,10 @@ function toggleDark() {
 	let comp3Btn = document.querySelector(".component-3-button");
 	comp3Btn.style.background =
 		"linear-gradient(to bottom right, #252525, #404040)";
+	//to make changes in component 4
+	let comp4Content = document.querySelector(".component-4-content");
+	comp4Content.style.color = "#fff";
+	comp4Content.style.fontWeight = "300";
 	//to change the appearance of Dark mode & Light mode buttons in dark mode
 	lightBtn.style.color = "#fff";
 	darkBtn.style.color = "#fff";
