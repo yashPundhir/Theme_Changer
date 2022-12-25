@@ -28,6 +28,7 @@ function toggleDark() {
 	let darkBtn = document.querySelector(".theme .darkmode .darkmodebtn");
 	let whiteLogo = document.querySelector(".whiteLogo");
 	let blackLogo = document.querySelector(".blackLogo");
+	//to make changes in NavBar
 	let navLI = document.querySelectorAll(".nav-mid .list .list-item");
 	for (let i = 0; i < 6; i++) {
 		navLI[i].style.color = "#fff";
@@ -41,6 +42,7 @@ function toggleDark() {
 	navbarBtn.style.border = "1.5px solid #fff";
 	navbarBtn.style.backgroundColor = "transparent";
 	navbarBtn.style.color = "#fff";
+	//to make changes in component 1
 	let comp1Content = document.querySelector(".component-1-content");
 	comp1Content.style.color = "#fff";
 	comp1Content.style.fontWeight = "300";
@@ -75,6 +77,9 @@ function toggleDark() {
 		comp5Content[i].style.color = "#fff";
 		comp5Content[i].style.fontWeight = "300";
 	}
+	//to make changes in component 8
+	let comp8 = document.querySelector(".component-8");
+	comp8.style.background = "linear-gradient(to bottom right, #151515, #404040)";
 	//to change the appearance of Dark mode & Light mode buttons in dark mode
 	lightBtn.style.color = "#fff";
 	darkBtn.style.color = "#fff";
