@@ -77,9 +77,18 @@ function toggleDark() {
 		comp5Content[i].style.color = "#fff";
 		comp5Content[i].style.fontWeight = "300";
 	}
+	//to make changes in component 6
+	// let comp6 = document.querySelector(".component-6");
+	// comp6.style.background = "linear-gradient(to bottom right, #000, #252525)";
+	//to make changes in component 7
+	let comp7 = document.querySelector(".component-7");
+	comp7.style.backgroundColor = "#202020";
+	let comp7Content = document.querySelector(".component-7-central-heading p");
+	comp7Content.style.color = "#fff";
+	comp7Content.style.fontWeight = "300";
 	//to make changes in component 8
 	let comp8 = document.querySelector(".component-8");
-	comp8.style.background = "linear-gradient(to bottom right, #151515, #404040)";
+	comp8.style.background = "linear-gradient(to bottom right, #000, #252525)";
 	//to change the appearance of Dark mode & Light mode buttons in dark mode
 	lightBtn.style.color = "#fff";
 	darkBtn.style.color = "#fff";
