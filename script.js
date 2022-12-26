@@ -1,19 +1,39 @@
-//Function to make changes wrt Dark Mode
+//Function to make changes wrt Light Mode
 
 function toggleLight() {
+	//to make changes in entire container
 	let body = document.querySelector("body");
 	let container = document.querySelector(".container");
 	body.style.backgroundColor = "#fff";
+	container.style.backgroundColor = "#fff";
+	container.style.color = "#101010";
+	//to change the appearance of Dark mode & Light mode buttons in light mode
 	let lightBtn = document.querySelector(".theme .lightmode .lightmodebtn");
 	lightBtn.style.color = "#000";
 	let darkBtn = document.querySelector(".theme .darkmode .darkmodebtn");
 	darkBtn.style.color = "#000";
-	container.style.backgroundColor = "#fff";
-	container.style.color = "#101010";
-	let whiteLogo = document.querySelector(".whiteLogo");
-	let blackLogo = document.querySelector(".blackLogo");
-	blackLogo.style.display = "flex";
-	whiteLogo.style.display = "none";
+	//to change the appearance of Logo in light mode
+	let whiteLogo = document.querySelectorAll(".whiteLogo");
+	let blackLogo = document.querySelectorAll(".blackLogo");
+	for (let index = 0; index < 2; index++) {
+		blackLogo[index].style.display = "flex";
+		whiteLogo[index].style.display = "none";
+	}
+	//to make changes in NavBar
+	let navLI = document.querySelectorAll(".nav-mid .list .list-item");
+	for (let i = 0; i < 6; i++) {
+		if (i === 0) {
+			navLI[i].style.color = "#000";
+			navLI[i].style.fontWeight = "700";
+		} else {
+			navLI[i].style.color = "#757575";
+			navLI[i].style.fontWeight = "500";
+		}
+	}
+	let navbarBtn = document.querySelector(".nav-end .btn");
+	navbarBtn.style.border = "2px solid #000";
+	navbarBtn.style.backgroundColor = "transparent";
+	navbarBtn.style.color = "#000";
 }
 
 //Function to make changes wrt Dark Mode
