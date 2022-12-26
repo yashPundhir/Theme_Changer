@@ -89,11 +89,57 @@ function toggleDark() {
 		comp5Content[i].style.fontWeight = "400";
 	}
 	//to make changes in component 6
-	// let comp6 = document.querySelector(".component-6");
-	// comp6.style.background = "linear-gradient(to bottom right, #000, #252525)";
+	let comp6 = document.querySelector(".component-6");
+	comp6.style.background = "linear-gradient(to bottom right, #252525, #454545)";
+	let purchasePlan = document.querySelectorAll(".purchase-plan");
+	for (let index = 0; index < purchasePlan.length; index++) {
+		purchasePlan[index].style.backgroundColor = "#151515";
+	}
+	let purchasePlanHeading = document.querySelectorAll(".purchase-plan-heading");
+	let purchasePlanMainHeading = document.querySelectorAll(
+		".purchase-plan-main-heading"
+	);
+	let purchasePlanSubHeading = document.querySelectorAll(
+		".purchase-plan-sub-heading"
+	);
+	for (let index = 0; index < purchasePlanHeading.length; index++) {
+		purchasePlanHeading[index].style.background =
+			"linear-gradient(to bottom right, #202020, #656565)";
+		purchasePlanMainHeading[index].style.color = "#fff";
+		purchasePlanSubHeading[index].style.color = "#fff";
+	}
+	let purchasePlan2Heading = document.querySelector(".purchase-plan-2-heading");
+	let purchasePlan2MainHeading = document.querySelector(
+		".purchase-plan-2-main-heading"
+	);
+	let purchasePlan2SubHeading = document.querySelector(
+		".purchase-plan-2-sub-heading"
+	);
+	purchasePlan2Heading.style.background =
+		"linear-gradient(to bottom right, #404040, #f5f5f5)";
+	purchasePlan2MainHeading.style.color = "#151515";
+	purchasePlan2SubHeading.style.color = "#151515";
+	purchasePlan2SubHeading.style.fontWeight = "600";
+	let benefitsListItems = document.querySelectorAll(".benefits-list-item");
+	for (let index = 0; index < benefitsListItems.length; index++) {
+		benefitsListItems[index].style.color = "#d0d0d0";
+		benefitsListItems[index].style.fontWeight = "600";
+	}
+	let purchasePlanBtn = document.querySelectorAll(
+		".purchase-plan-pricing-info button"
+	);
+	for (let index = 0; index < purchasePlanBtn.length; index++) {
+		purchasePlanBtn[index].style.border = "1.5px solid #fff";
+		purchasePlanBtn[index].style.backgroundColor = "transparent";
+		purchasePlanBtn[index].style.color = "#fff";
+	}
+	let cpBtn = document.querySelector(".cp-btn");
+	cpBtn.style.background = "linear-gradient(to bottom right, #252525, #404040)";
+	cpBtn.style.border = "none";
+
 	//to make changes in component 7
 	let comp7 = document.querySelector(".component-7");
-	comp7.style.backgroundColor = "#202020";
+	comp7.style.backgroundColor = "#151515";
 	let comp7Content = document.querySelector(".component-7-central-heading p");
 	comp7Content.style.color = "#d0d0d0";
 	comp7Content.style.fontWeight = "400";
