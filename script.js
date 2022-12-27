@@ -34,6 +34,27 @@ function toggleLight() {
 	navbarBtn.style.border = "2px solid #000";
 	navbarBtn.style.backgroundColor = "transparent";
 	navbarBtn.style.color = "#000";
+	//to make changes in component 1
+	let comp1Content = document.querySelector(".component-1-content");
+	comp1Content.style.color = "#757575";
+	comp1Content.style.fontWeight = "500";
+	let comp1Btn = document.querySelector(".component-1-button");
+	comp1Btn.style.background =
+		"linear-gradient(to bottom right, #09bcf8, #056aeb)";
+	//to make changes in component 2
+	let comp2Content = document.querySelector(".component-2-content");
+	comp2Content.style.color = "#858585";
+	comp2Content.style.fontWeight = "500";
+	let comp2Btn = document.querySelector(".component-2-button");
+	comp2Btn.style.background =
+		"linear-gradient(to bottom right, #09bcf8, #056aeb)";
+	//to make changes in component 3
+	let comp3Content = document.querySelector(".component-3-content");
+	comp3Content.style.color = "#858585";
+	comp3Content.style.fontWeight = "500";
+	let comp3Btn = document.querySelector(".component-3-button");
+	comp3Btn.style.background =
+		"linear-gradient(to bottom right, #09bcf8, #056aeb)";
 }
 
 //Function to make changes wrt Dark Mode
@@ -81,8 +102,6 @@ function toggleDark() {
 	comp1Btn.style.background =
 		"linear-gradient(to bottom right, #252525, #404040)";
 	//to make changes in component 2
-	let comp2 = document.querySelector(".component-2");
-	comp2.style.gap = "60px";
 	let comp2Content = document.querySelector(".component-2-content");
 	comp2Content.style.color = "#d0d0d0";
 	comp2Content.style.fontWeight = "400";
@@ -90,8 +109,6 @@ function toggleDark() {
 	comp2Btn.style.background =
 		"linear-gradient(to bottom right, #252525, #404040)";
 	//to make changes in component 3
-	let comp3 = document.querySelector(".component-3");
-	comp3.style.gap = "50px";
 	let comp3Content = document.querySelector(".component-3-content");
 	comp3Content.style.color = "#d0d0d0";
 	comp3Content.style.fontWeight = "400";
