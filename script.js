@@ -74,6 +74,15 @@ function toggleLight() {
 	//to make changes in component 8
 	let comp8 = document.querySelector(".component-8");
 	comp8.style.background = "linear-gradient(to bottom right, #09bcf8, #056aeb)";
+	//to make changes in Footer
+	let footerContent = document.querySelector(".footer-container-1 p");
+	footerContent.style.color = "#959595";
+	footerContent.style.fontWeight = "500";
+	let footerListItems = document.querySelectorAll(".footer-list-item");
+	for (let index = 0; index < footerListItems.length; index++) {
+		footerListItems[index].style.color = "#959595";
+		footerListItems[index].style.fontWeight = "500";
+	}
 }
 
 //Function to make changes wrt Dark Mode
