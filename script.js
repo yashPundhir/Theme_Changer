@@ -55,6 +55,16 @@ function toggleLight() {
 	let comp3Btn = document.querySelector(".component-3-button");
 	comp3Btn.style.background =
 		"linear-gradient(to bottom right, #09bcf8, #056aeb)";
+	//to make changes in component 4
+	let comp4Content = document.querySelector(".component-4-content");
+	comp4Content.style.color = "#858585";
+	comp4Content.style.fontWeight = "500";
+	//to make changes in component 5
+	let comp5Content = document.querySelectorAll(".component-5-content");
+	for (let i = 0; i < 6; i++) {
+		comp5Content[i].style.color = "#858585";
+		comp5Content[i].style.fontWeight = "500";
+	}
 }
 
 //Function to make changes wrt Dark Mode
