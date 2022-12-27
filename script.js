@@ -65,6 +65,55 @@ function toggleLight() {
 		comp5Content[i].style.color = "#858585";
 		comp5Content[i].style.fontWeight = "500";
 	}
+	//to make changes in component 6
+	let comp6 = document.querySelector(".component-6");
+	comp6.style.background = "linear-gradient(to bottom right, #09bcf8, #056aeb)";
+	let purchasePlan = document.querySelectorAll(".purchase-plan");
+	for (let index = 0; index < purchasePlan.length; index++) {
+		purchasePlan[index].style.backgroundColor = "#fff";
+	}
+	let purchasePlanHeading = document.querySelectorAll(".purchase-plan-heading");
+	let purchasePlanMainHeading = document.querySelectorAll(
+		".purchase-plan-main-heading"
+	);
+	let purchasePlanSubHeading = document.querySelectorAll(
+		".purchase-plan-sub-heading"
+	);
+	for (let index = 0; index < purchasePlanHeading.length; index++) {
+		purchasePlanHeading[index].style.background =
+			"linear-gradient(to bottom right, #d0d0d0, #fff)";
+		purchasePlanMainHeading[index].style.color = "#000";
+		purchasePlanSubHeading[index].style.color = "#757575";
+	}
+	let purchasePlan2Heading = document.querySelector(".purchase-plan-2-heading");
+	let purchasePlan2MainHeading = document.querySelector(
+		".purchase-plan-2-main-heading"
+	);
+	let purchasePlan2SubHeading = document.querySelector(
+		".purchase-plan-2-sub-heading"
+	);
+	purchasePlan2Heading.style.background = "#353535";
+	purchasePlan2MainHeading.style.color = "#fff";
+	purchasePlan2SubHeading.style.color = "#fff";
+	purchasePlan2SubHeading.style.fontWeight = "300";
+	let benefitsListItems = document.querySelectorAll(".benefits-list-item");
+	for (let index = 0; index < benefitsListItems.length; index++) {
+		benefitsListItems[index].style.color = "#393939";
+		benefitsListItems[index].style.fontWeight = "700";
+	}
+	let purchasePlanBtn = document.querySelectorAll(
+		".purchase-plan-pricing-info button"
+	);
+	for (let index = 0; index < purchasePlanBtn.length; index++) {
+		purchasePlanBtn[index].style.border = "2px solid #000";
+		purchasePlanBtn[index].style.backgroundColor = "transparent";
+		purchasePlanBtn[index].style.color = "#000";
+	}
+	let cpBtn = document.querySelector(".cp-btn");
+	cpBtn.style.background = "linear-gradient(to bottom right, #09bcf8, #056aeb)";
+	cpBtn.style.border = "none";
+	cpBtn.style.color = "#fff";
+
 	//to make changes in component 7
 	let comp7 = document.querySelector(".component-7");
 	comp7.style.backgroundColor = "#f5f5f5";
