@@ -4,6 +4,8 @@ function toggleLight() {
 	//to make changes in entire container
 	let body = document.querySelector("body");
 	let container = document.querySelector(".container");
+	let theme = body.querySelector(".theme");
+	theme.style.boxShadow = "inset 0 0 2rem 1rem rgba(0, 0, 0, 0.6)";
 	body.style.backgroundColor = "#fff";
 	container.style.backgroundColor = "#fff";
 	container.style.color = "#101010";
@@ -140,6 +142,8 @@ function toggleDark() {
 	//to make changes in entire container
 	let body = document.querySelector("body");
 	let container = body.querySelector(".container");
+	let theme = body.querySelector(".theme");
+	theme.style.boxShadow = "inset 0 0 2rem 1rem rgba(255, 255, 255, 0.2)";
 	body.style.backgroundColor = "#101010";
 	container.style.backgroundColor = "#101010";
 	container.style.color = "#fff";
